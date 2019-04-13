@@ -27,7 +27,10 @@ def extract_and_save_img(df,type_subdir,file_prefix='Image_',image_dir='data'):
             os.mkdir(type_fp)
         # Reshape to channel_last_dimensions
         pixel_arr = np.reshape(pixel_arr,(IMAGE_WIDTH,IMAGE_HEIGHT,1))
-        type_fp = os.path.join(type_fp,file_prefix+str(row.Index))
+        if type_subdir != 'Test':
+            type_fp = os.path.join(type_fp,file_prefix+str(row.Index))
+        else:
+            type_fp = os.path.join(type_fp, str(row.emotion)+'_'+file_prefix + str(row.Index))
         save_img(type_fp+'.png',pixel_arr)
         #Rese typ_fp to basetype
         type_fp = basetype_fp
