@@ -22,4 +22,4 @@ def test(result_file_name='Results.csv'):
     return evaluate_class_accuracy(result_file_name=result_file_name)
 
 
-print(test('Results.csv'))
+print(test('Results6123.csv'))
