@@ -108,7 +108,7 @@ early_stop = EarlyStopping(
   patience 	= 15,
   mode 		= 'auto')
 
-for i in range(6):
+for i in range(5, 7):
   print("Emotion: ", i)
 
   filepath='emotion' + str(i) + '/Model.{epoch:02d}-{val_acc:.4f}.hdf5'
