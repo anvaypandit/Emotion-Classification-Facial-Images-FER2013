@@ -19,7 +19,7 @@ img_height, img_width = 197, 197
 # Parameters
 num_classes         = 2     # ['Anger', 'Disgust', 'Fear', 'Happiness', 'Sadness', 'Surprise', 'Neutral']
 epochs_top_layers   = 5
-epochs_all_layers   = 50
+epochs_all_layers   = 15
 batch_size          = 64
 
 # MODEL ###############################################################################################################################################
